@@ -1,3 +1,5 @@
+
+#!/usr/bin/python3
 import base64
 def reduce(str_data):
     dict_data = {}
