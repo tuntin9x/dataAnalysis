@@ -1,6 +1,6 @@
-
 #!/usr/bin/python3
 import base64
+import json
 def reduce(str_data):
     dict_data = {}
     #str_data = "Zm9vLDE7Zm9vLDE7cXV1eCwxO2xhYnMsMTtmb28sMTtiYXIsMTtxdXV4LDE="
@@ -13,4 +13,5 @@ def reduce(str_data):
             dict_data[word] = 1
         else:
             dict_data[word] = dict_data[word]+int(count)
-    print(dict_data)
+    result = json.dumps(dict_data)
+    return result
