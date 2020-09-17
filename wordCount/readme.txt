@@ -15,4 +15,9 @@ Nguyên lý vận hành:
 	- Worker sẽ thực hiện tính toán 2 hàm là:
 		+) map() thực hiện gán giá trị cho mỗi từ là 1
 		+) reduce() thực hiện tổng hợp đưa ra tần số của mỗi loại từ
-
+-------------------------------------------------
+Hướng dẫn chạy:
+	*** LƯU Ý NHỚ CHẠY FILE THEO ĐÚNG THỨ TỰ !!! ***
+	1. python3 master.py
+	2. python3 worker-map.py
+	3. python3 worker-reduce.py
