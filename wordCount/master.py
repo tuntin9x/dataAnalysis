@@ -60,6 +60,7 @@ class ThreadedServer:
                     date_time = now.strftime("%m/%d/%Y %H:%M:%S")
                     data = str(data,"utf-8")
                     str_decode64 = base64.b64decode(data)
+                    listReduce.append(str(str_decode64,"utf-8"))
                     print(typeW,"-",date_time,"-",address,"-",str(str_decode64,"utf-8"))
         
     def sendMsgToWorker(self,client,typeW):
